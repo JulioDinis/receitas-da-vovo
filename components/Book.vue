@@ -13,7 +13,17 @@
         >
           <v-card>
             <v-img
+              v-if="livro.photo !== null"
               :src="`https://api.polemicnews.com${livro.photo.download}`"
+              class="white--text align-end"
+              gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
+              height="400px"
+            >
+              <v-card-title v-text="livro.title"></v-card-title>
+            </v-img>
+            <v-img
+              v-else
+              src="https://clipart.coolclips.com/480/vectors/tf05238/CoolClips_vc032960.png "
               class="white--text align-end"
               gradient="to bottom, rgba(0,0,0,.1), rgba(0,0,0,.5)"
               height="400px"
