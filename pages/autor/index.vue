@@ -61,18 +61,18 @@ export default {
   methods: {
     busca(query, page) {
       this.$axios
-        .get(`/s/author?query= ${query}&page=${page}&max_results=1`)
+        .get(`/s/author?query=${query}`)
         .then((response) => {
           console.log(response)
           this.resultados = response.data
           this.livros = this.resultados.results.results
+
           if (typeof this.livros !== 'undefined') {
             this.buscaRealizada = true
             console.log(this.livros)
             console.log('resultados')
             console.log(this.resultados)
           } else {
-            alert('jasdkajsdk')
           }
         })
         .catch((response) => {
