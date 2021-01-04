@@ -83,7 +83,7 @@ export default {
         {
           icon: 'mdi-apps',
           title: 'Books',
-          to: '/books',
+          to: '/',
         },
       ],
       miniVariant: false,

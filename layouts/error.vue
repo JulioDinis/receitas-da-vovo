@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  layout: 'empty',
+  layout: 'receitas',
   props: {
     error: {
       type: Object,
