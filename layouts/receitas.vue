@@ -60,7 +60,22 @@ export default {
         {
           icon: 'mdi-book-multiple-outline',
           title: 'Books',
-          to: '/books',
+          to: '/',
+        },
+        {
+          icon: 'mdi-book-music',
+          title: 'AudioBooks',
+          to: '/audio_books',
+        },
+        {
+          icon: 'mdi-book-music',
+          title: 'Autor',
+          to: '/autor',
+        },
+        {
+          icon: 'mdi-book-music',
+          title: 'Editora',
+          to: '/editora',
         },
       ],
       miniVariant: false,
